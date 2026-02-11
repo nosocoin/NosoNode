@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>NosoNode | Documentation</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <a href="#" class="logo">Noso<span>Node</span></a>
+            <div class="mobile-menu-toggle" id="menu-toggle">
+                <div class="burger-bar bar1"></div>
+                <div class="burger-bar bar2"></div>
+                <div class="burger-bar bar3"></div>
+            </div>
+        </header>
+
+        <nav class="sidebar" id="sidebar">
+            <div class="search-container">
+                <input type="text" id="api-search" placeholder="Search..." class="search-input">
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">The Project</div>
+                <a href="#PROJECT_OVERVIEW.md" class="sidebar-link">Project Overview</a>
+                <a href="#README.md" class="sidebar-link">Introduction</a>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Architecture</div>
+                <a href="#ARCHITECTURE.md" class="sidebar-link">System Design</a>
+                <a href="#CRYPTO.md" class="sidebar-link">Cryptography</a>
+                <a href="#DATA_STRUCTURES.md" class="sidebar-link">Data Specs</a>
+                <a href="#PROTOCOL.md" class="sidebar-link">P2P Protocol</a>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">Internal Reference</div>
+                <a href="#FILES.md" class="sidebar-link">File Mapping</a>
+                <a href="#LOGIC_FLOWS.md" class="sidebar-link">Logic Flows</a>
+            </div>
+
+            <div class="sidebar-section">
+                <div class="sidebar-title">API Reference</div>
+                <div id="api-links">
+                    <div class="loading">Generating map...</div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="content-wrapper">
+            <div class="content-inner">
+                <article id="content">
+                    <h1>Connecting to docs...</h1>
+                </article>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
