@@ -7,6 +7,7 @@ on:
     paths:
       - 'docs/**'
       - 'docs_site/**'
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -25,6 +26,8 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
+        with:
+          enablement: true
 
       - name: Sync latest docs to docs_site
         run: |
