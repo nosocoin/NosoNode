@@ -1,13 +1,14 @@
 name: Build NosoWallet
 
 on:
-  push:
-    branches: [ main ]
-    tags: [ "*" ]
-    paths-ignore: [ "README.md", "changelog.txt", "releasenotes.txt" ]
-
-  pull_request:
-    branches: [ main ]
+  # push:
+  #   branches: [ main ]
+  #   tags: [ "*" ]
+  #   paths-ignore: [ "README.md", "changelog.txt", "releasenotes.txt", "docs_site/**" ]
+  # 
+  # pull_request:
+  #   branches: [ main ]
+  workflow_dispatch:
 
 permissions:
   contents: write
